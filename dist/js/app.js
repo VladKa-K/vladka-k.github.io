@@ -121,7 +121,7 @@ __webpack_require__.g.$ = __webpack_require__.g.jQuery = __webpack_require__(/*!
 
 aos_dist_aos_js__WEBPACK_IMPORTED_MODULE_0___default().init();
 var lenis = new Lenis({
-  duration: 2.5,
+  duration: 1.5,
   lerp: 1,
   smooth: true,
   autoRaf: true
@@ -321,7 +321,7 @@ gsap.registerPlugin(ScrollTrigger);
           left: '33%',
           top: 'calc(50% - ' + $headingWrap.outerHeight() / 2 + 'px)',
           xPercent: -50,
-          scale: 1.25,
+          scale: 1.1,
           zIndex: 1000
         });
         gsap.to($headingWrap, {
@@ -454,66 +454,6 @@ gsap.registerPlugin(ScrollTrigger);
         });
       };
     });
-
-    // gsap.registerPlugin(ScrollTrigger);
-
-    // let tls;
-    // function scrollInitAnimation() {
-    //     if (tls) {
-    //         tls.scrollTrigger.kill();
-    //         tls.kill();
-    //     }
-
-    //     if ($(window).width() < 1024) {
-    //         gsap.set(".js--content-first-pattern", { clearProps: "all" });
-    //         return;
-    //     }
-
-    //     function getTargetPos(selector) {
-    //         let el = $(selector);
-    //         let rect = el[0].getBoundingClientRect();
-
-    //         return {
-    //             x: rect.left + window.scrollX,
-    //             y: rect.top + window.scrollY
-    //         };
-    //     }
-
-    //     gsap.set(".js--content-first-pattern", {
-    //         x: () => getTargetPos(".js--pattern-point--one").x,
-    //         y: () => getTargetPos(".js--pattern-point--one").y,
-    //     });
-
-    //     tls = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: ".js--pattern-point--one",
-    //             start: "center center",
-    //             endTrigger: ".js--pattern-point--three",
-    //             end: "center center",
-    //             scrub: 1.5,
-    //         }
-    //     });
-
-    //     tls.to(".js--content-first-pattern", {
-    //         x: () => getTargetPos(".js--pattern-point--two").x - $(".js--pattern-point--two").outerWidth(),
-    //         y: () => getTargetPos(".js--pattern-point--two").y,
-    //         rotation: 360,
-    //         ease: "none",
-    //     });
-
-    //     tls.to(".js--content-first-pattern", {
-    //         x: () => getTargetPos(".js--pattern-point--three").x,
-    //         y: () => getTargetPos(".js--pattern-point--three").y,
-    //         rotation: -35,
-    //         ease: "none",
-    //     });
-    // }
-
-    // scrollInitAnimation();
-
-    // $(window).on("resize", () => {
-    //     scrollInitAnimation();
-    // });
   });
 })(jQuery);
 
